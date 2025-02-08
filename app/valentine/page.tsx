@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-
+import Link
+ from "next/link";
 export default function ValentinePage() {
   const [clickCount, setClickCount] = useState(0);
   const [isNoDisabled, setIsNoDisabled] = useState(false);
@@ -45,9 +46,11 @@ export default function ValentinePage() {
       </div>
 
       <div className="flex items-center justify-center gap-4">
-        <button className="bg-pink-300 text-black font-bold py-6 px-12 rounded-2xl shadow-lg hover:bg-pink-400 transition duration-300 pixel-font mb-40">
-          Yes
-        </button>
+        <Link href="/congratulation">
+            <button className="bg-pink-300 text-black font-bold py-6 px-12 rounded-2xl shadow-lg hover:bg-pink-400 transition duration-300 pixel-font mb-40">
+                Yes
+            </button>
+        </Link>
         <button
           className={`bg-pink-300 text-black font-bold py-6 px-12 rounded-2xl shadow-lg hover:bg-pink-400 transition duration-300 pixel-font mb-40 ${isNoDisabled ? "bg-gray-300 text-gray-700 cursor-not-allowed" : ""}`}
           onClick={handleNoClick}
