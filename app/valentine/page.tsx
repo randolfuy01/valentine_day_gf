@@ -9,6 +9,7 @@ export default function ValentinePage() {
   const [speechMessage, setSpeechMessage] = useState(
     "Whatcha think?",
   );
+  const question = "Be my Valentine's?";
 
   const handleNoClick = () => {
     setClickCount((prevCount) => prevCount + 1);
@@ -16,7 +17,7 @@ export default function ValentinePage() {
     if (clickCount === 0) {
       setSpeechMessage("Hey you shouldn't do that!");
     } else if (clickCount === 1) {
-      setSpeechMessage("You can't click 'No'!");
+      setSpeechMessage("You can't click No!");
       setIsNoDisabled(true);
     }
   };
@@ -32,7 +33,7 @@ export default function ValentinePage() {
           className="w-20 h-20 animate-bounceY rounded-lg mr-4"
         />
         <h1 className="font-bold text-3xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-pink-300 pixel-font">
-          Be my Valentine's?
+          {question}
         </h1>
         <Image
           src="/rose.jpg"
