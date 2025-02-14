@@ -9,8 +9,9 @@ export default function ValentinePage() {
 
   const sections = [
     { title: "Restaurant", content: "Delicious udon at Udon Mugizo. 🍜", yelpUrl: "https://www.yelp.com/biz/udon-mugizo-san-jose-san-jose" },
-    { title: "Signature Drink", content: "Matcha lover at Izumi Matcha. 🍵", yelpUrl: "https://www.yelp.com/biz/izumi-matcha-san-jose" },
-    { title: "Sweet Treat", content: "End off our day with dessert at Sulbing. 🍰", yelpUrl: "https://www.yelp.com/biz/sulbing-santa-clara-3" }
+    { title: "Signature Drink", content: "Matcha lover at Cere Tea. 🍵", yelpUrl: "https://www.yelp.com/biz/cer%C3%A9-tea-saratoga?osq=cere+tea" },
+    { title: "Sweet Treat", content: "End off our day with dessert at Sulbing. 🍰", yelpUrl: "https://www.yelp.com/biz/sulbing-santa-clara-3" },
+    { title: "Extra (Maybe)", content: "Shopping at Valley Fair 👀", yelpUrl: "https://www.yelp.com/biz/westfield-valley-fair-santa-clara-3" }
   ];
 
   const yay = "YAY! You are now officially my Valentine";
